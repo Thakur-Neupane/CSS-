@@ -1,3 +1,41 @@
-p {
+/* p {
   color: green;
+}
+html {
+  font-size: 1px;
+}
+.em {
+  font-size: 20px;
+}
+.em div {
+  font-size: 2em;
+} */
+body {
+  font-size: 40px;
+}
+.parent {
+  background: blue;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.parent > div {
+  background: grey;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-3 {
+  flex-grow: 1;
+}
+.item-5 {
+  flex-grow: 3;
+}
+.parent > div:nth-child(even) {
+  background: red;
 }
